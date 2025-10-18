@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Risk Dashboard</h1>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Portfolio Risk</h5>
+            </div>
+            <div class="card-body">
+                {% if metrics %}
+                <div class="text-center mb-3">
+                    <h2 class="text-warning">{{ metrics.portfolio_risk }}</h2>
+                </div>
+                <p><strong>Diversification:</strong> {{ metrics.diversification }} positions</p>
+                {% else %}
+                <p class="text-muted">No risk data available. Add holdings to analyze risk.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Risk Alerts</h5>
+            </div>
+            <div class="card-body">
+                <p class="text-muted">No active alerts</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

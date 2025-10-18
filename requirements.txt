@@ -1,0 +1,32 @@
+# Financial Intelligence System - Dependencies
+
+# Web Framework
+Flask
+Flask-CORS
+Werkzeug
+
+# Environment & Configuration
+python-dotenv
+
+# Data Science & Analysis
+pandas
+numpy
+scipy
+statsmodels
+
+# Machine Learning
+scikit-learn
+
+# Financial Data APIs
+yfinance
+requests
+
+# LLM Integration
+google-generativeai
+
+# Database
+SQLAlchemy
+
+# Utilities
+python-dateutil
+pytz
